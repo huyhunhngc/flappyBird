@@ -6,7 +6,7 @@ var pipe = function(game, bird, x, move){
     this.bird = bird;
     this.score = 0;
 
-    this.distance = 100;
+    this.distance = 120;
     this.x = x;
     this.yTop = -200;
     this.yBott = this.yTop + 380 + this.distance;
@@ -17,10 +17,10 @@ var pipe = function(game, bird, x, move){
    this.reset = function()
     {
        this.score = 0; 
-       this.distance = 110;
+       this.distance = 120;
        this.x = x;
        this.yTop = -200;
-       this.yBott = this.yTop + 400 + this.distance;
+       this.yBott = this.yTop + 380 + this.distance;
     }
     var self = this;
 
