@@ -15,7 +15,7 @@ var bird = function(game)
         
 
         this.rotation = 0;
-        this.jump = 6.5;
+        this.jump = 6;
         this.speed = -5;
         this.gravity = 0.3;
     }
