@@ -208,4 +208,22 @@ canvas.addEventListener("click", function(event)
         }
       break;   
   }
-})        
+}) 
+document.addEventListener("keydown", function(event)
+{ 
+  switch(stateGame)
+  {
+    case 1:
+        //console.log(stateGame);
+        if(event.keyCode == 32)
+        {
+          flyup.play();
+          stateGame = 2;
+        }
+        break;   
+    case 2:
+        g.bird.flap();
+        flap.play();
+        break;
+  }
+})
